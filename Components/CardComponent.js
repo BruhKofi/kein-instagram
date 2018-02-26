@@ -7,9 +7,9 @@ export class CardComponent extends Component {
 
     const images = {
 
-      "1": require('../assets/icon.png'),
-      "2": require('../assets/icon.png'),
-      "3": require('../assets/icon.png')
+      "1": require('../assets/posts/valerie.jpg'),
+      "2": require('../assets/posts/annie.jpg'),
+      "3": require('../assets/posts/alex.jpg')
     }
 
     return (
@@ -44,7 +44,7 @@ export class CardComponent extends Component {
       </CardItem>
       <CardItem>
       <Body>
-        <Text><Text style={{fontWeight: '800'}}>kofi </Text>Some Random Text</Text>
+        <Text><Text style={{fontWeight: '800'}}>kofi </Text>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores soluta dolor eveniet fugiat rem ullam laudantium, quod accusamus autem numquam maxime tempora nisi commodi unde. Nisi repudiandae culpa omnis doloremque!</Text>
       </Body>
       </CardItem>
       </Card>
