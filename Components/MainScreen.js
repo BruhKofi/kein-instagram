@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View } from 'react-native'
+import { Text, View, Platform } from 'react-native'
 import {Icon} from 'native-base';
 
 import { TabNavigator } from "react-navigation";
@@ -37,6 +37,23 @@ const AppTabNavigator = TabNavigator({
   },
   ProfileTab: {
     screen: ProfileTab
+  }
+}, {
+  animationEnabled: true,
+  swipeEnabled: true,
+  tabBarPosition: "bottom",
+  tabBarOptions: {
+    style: {
+      ...Platform.select({
+        android:{
+          backgroundColor: 'white'
+        }
+      })
+    },
+    activeTintColor: "black",
+    inactiveTintColor: "grey",
+    showLabel: false,
+    showIcon: true
   }
 })
 
