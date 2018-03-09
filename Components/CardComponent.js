@@ -16,7 +16,7 @@ export class CardComponent extends Component {
       <Card>
       <CardItem>
       <Left>
-      <Thumbnail source={require("../assets/icon.png")}/>
+      <Thumbnail source={require("../assets/posts/valerie.jpg")}/>
       <Body>
         <Text>Kofi</Text>
         <Text note>26 Feb 2018</Text>
